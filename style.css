@@ -1,0 +1,166 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    page-break-before: always;
+    page-break-after: always;
+    orphans: 3;
+    widows: 2;
+  }
+body {
+    background-repeat: repeat-x;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 250%;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  orphans: 3;
+}
+
+h2 {
+    font-size: 150%;
+  font-weight: 600;
+  font-style: italic;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 5px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+ border-style: double;
+ 
+  orphans: 3;
+}
+
+a {
+    margin-top: 15px;
+    font-size: 120%;
+  }
+
+
+nav {
+    text-align:center;
+    font-size:32px;
+}
+
+ol {
+    color: rebeccapurple;
+  font-variant: small-caps;
+  list-style-image: url("https://i.imgur.com/PCUkODP.png");
+  vertical-align: baseline;
+}
+ul {
+    list-style-type: square;
+  list-style-position: inside;
+}
+
+dl {
+    list-style: square inside url("https://i.imgur.com/PCUkODP.png");
+}
+
+
+.dynamicTable td, th{
+    border-width:2px;
+    border-color:black;
+    border-style:outset;
+    border-spacing:1px;
+    margin-left:2vw;
+    text-align:center;
+    
+}
+table img{
+    float:none;
+    width:75px;
+    height:150px;
+}
+table figure img{
+    float:left;
+    width:50px;
+    height:50px;
+}
+table{
+  caption-side: bottom;
+  background-image: url("https://i.pinimg.com/originals/43/2d/7b/432d7bbeecc9d7884ba4a67e8d62d7f3.jpg");
+}
+
+
+
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: rebeccapurple;
+}
+
+a:hover {
+    font-size: 160%;
+  background-color: grey;
+}
+
+a:active {
+    background-color: blue;
+}
+
+
+input:focus{
+    background-color: red;
+}
+
+@media print {
+    p{
+        page-break-before:always;
+        widows:3;
+    }
+    form{
+        page-break-after:always;
+        orphans:3;
+    }
+}
+
+@media screen and (min-width:500px){
+    form{
+        width:50%;
+    }
+}
+
+@media screen and (min-width:800px){
+    form{
+        width:70%;
+    }
+}
+label {
+    margin-right: 15px;
+    line-height: 32px;
+  }
+  input:checked {
+    border: 6px solid black;
+  }
+button,
+legend {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: 0;
+  font-size: 14px;
+}
+
+button:hover,
+button:focus {
+  color: grey;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
+input:checked {
+    border: 6px solid black;
+  }
