@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <!--<p>In order to simplify our task, for our both our HTML and CSS files we only used tags that are compatible with almost all browsers.
+ During our testing, we used three different browsers, Google Chrome, Mozilla Firefox and Microsoft Edge and we have to say that except from small size differences, we could not identify any other difference between our web shop on these browsers.
+ The truth is we have not tested our web shop with every browser there is out there, but it will function the same on most of the browsers.  </p>-->
+  
+    <head>
+        <meta charset = "UTF-8" content="width=device-width">
+        <link href = "style.css" rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+        <title>Web shop</title>    
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body>
+        <h1>Smarthpone web shop</h1>
+        
+        <section id="deals">
+            
+            <form action="#">
+                <table class="dynamicTable" id="table1">
+                    
+                    <tr>
+                        <th>Image</th>
+                        <th onclick="sortTable(1)">Brand</th>
+                        <th onclick="sortTable(2)">Model</th>
+                        <th onclick="sortTable(3)">Screensize</th>
+                        <th colspan="2" onclick="sortTable(4)">Operating System</th>
+                    </tr>
+                    <tr id="inputLine">
+                        <td><input type="text" name="image" placeholder="Mobile Image Link" id="image" required></td> 
+                        <td><input type="text" name="brand"  placeholder="Brand" id="brand" required></td>
+                        <td><input type="text" name="model"  placeholder="Model" id="model" required></td>
+                        <td><input type="number" name="screensize"  placeholder="Screensize"  id="screensize" required></td>
+                        <td>
+                            <fieldset id="os">
+                              
+                                <legend>Please provide the product's operating system</legend>
+                                <div>
+                                <input type="radio" name="os" value="iOS" id="iOS" > 
+                                <label for="iOS">iOS</label>
+                                <input type="radio" name="os" value="Android" id="android">
+                                <label for="android">Android</label>
+                                </div>
+                            </fieldset>
+                          
+                        </td>
+                        <td><div><input type="button" value="Submit" id="submit"><br><input type="button" value="Reset" id="reset"></div></td>
+                    </tr>                    
+                </table>
+            </form>
+        </section>
+        <!--Content-->
+    <p>
+        We currently also provide repair services to the
+        <strong>following</strong> products:
+      </p>
+      <ul>
+        <li>
+          Apple
+          <ul>
+            <li>iPhone</li>
+            <li>iPad</li>
+          </ul>
+        </li>
+        <li>
+          Samsung
+          <ul>
+            <li>Smarthpone</li>
+            <li>Tablet</li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        For repairs we currently have 3 shops at 3 different locations that
+        provide such services
+      </p>
+      <ol>
+        <li>Amsterdam</li>
+        <li>Den Haag</li>
+        <li>Rotterdam</li>
+      </ol>
+      <p>Here is a list with the repair services we provide:</p>
+      <dl>
+        <dt><strong>Hardware</strong></dt>
+        <dd>-screen replacement</dd>
+        <dd>-display replacement</dd>
+        <dd>-battery replacement</dd>
+        <dt><strong>Software</strong></dt>
+        <dd>-jailbreaking</dd>
+        <dd>-software updating</dd>
+        <dd>-malware removal</dd>
+      </dl>
+      
+     
+      <p>
+        Some of the items from the following table are currently on sale and are
+        indicated with a "&#9830;" symbol.
+      </p>
+      <!-- Table with accessories -->
+      <table>
+        <tr>
+          <th><em>Brand</em></th>
+          <th><em>Model</em></th>
+          <th><em>Playtime</em></th>
+          <th><em>Price</em></th>
+          <th><em>Image</em></th>
+        </tr>
+        <tr>
+          <th>&#9830;Apple</th>
+          <td>
+            <pre>Airpods Pro</pre>
+          </td>
+          <td>4.5hrs</td>
+          <td id="firstelem"><strong>229$</strong></td>
+          <td>
+            <img
+              src="https://i.pinimg.com/originals/c9/77/ab/c977ab4dcde6c814fc4b1f1575344c26.jpg"
+              alt="airpods pro"
+              width="200"
+              height="200"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>&#9830;Samsung</th>
+          <td>Galaxy Buds</td>
+          <td>13hrs</td>
+          <td id="secondelem"><strong>139$</strong></td>
+          <td>
+            <img
+              src="https://i.pinimg.com/originals/e2/10/1f/e2101f5cf764cd0591a8ca7cb429d71d.jpg"
+              alt="galaxy buds"
+              width="230"
+              height="200"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>&#9830;Huawei</th>
+          <td>FreeBuds 4i</td>
+          <td>
+            <pre>10hrs</pre>
+          </td>
+          <td id="thirdelem"><strong>90$</strong></td>
+          <td>
+            <img
+              src="https://i.pinimg.com/originals/ee/3e/d5/ee3ed5d39b48c1c913d02034820250bb.jpg"
+              alt="huawei free buds"
+              width="200"
+              height="200"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>&#9651;Xiaomi</th>
+          <td>True Wireless Earbuds Basic 2</td>
+          <td>4hrs</td>
+          <td id="fourthelem"><strong>29$</strong></td>
+          <td>
+            <img
+              src="https://i.pinimg.com/originals/62/2e/49/622e49243953c56585d4879e722ced82.jpg"
+              alt="xiaomi earbuds"
+              width="200"
+              height="200"
+            />
+          </td>
+        </tr>
+      </table>
+      <!-- Due to the webpage's reasonably large size, we also provided a "Go to the top" button so that the user won't have to manually scroll back up -->
+      <nav>
+        <a href="#">Go to the top</a>
+      </nav>
+        
+        <script  src = "index.js"></script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d7245c69bd5597d',m:'gj2mGMNqxATjjJCIyJEnVqO5PKjKNq0qD1tmS2RssYc-1643792881-0-AdLOsLTGXlW4k9pKw+gv5/0RO0X4CGBgIPyflkWTva7kTGnESfphAusPm64g5Iekt441lQBv3jYeigoRSDBkSw5wKLBxCA8Bh3F10WwuPLlRDi61O0unCI2kln3MSM+WX4/6E6UCNeafF6LS73GTMxJie+pZ/efDkr5+vSjybUFc1j/+voMZUgcoXsbE2BhKGw==',s:[0x83bd576cd6,0x01786a8e8b],}})();</script></body>
+    
+</html>
